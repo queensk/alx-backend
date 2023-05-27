@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
-class config(object):
+class Config(object):
     """
     Bebel config
     """
@@ -16,7 +16,7 @@ class config(object):
 
 
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object(Config)
 bebel = Babel(app)
 
 
