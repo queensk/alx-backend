@@ -17,10 +17,10 @@ class Config(object):
 
 app = Flask(__name__)
 app.config.from_object(Config)
-bebel = Babel(app)
+babel = Babel(app)
 
 
-@bebel.localeselector
+@babel.localeselector
 def get_local():
     """
     configure app based on local languages
